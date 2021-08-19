@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript on HTML</title>
+
+    <!-- import file JS cara eksternal -->
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <h1 id="tanggal"></h1>
+
+    <!-- menghitung 2 angka -->
+    <p>Menghitung dua Angka</p>
+    Angka 1: <input type="text" id="angka1"> <br> <br>
+    Angka 2: <input type="text" id="angka2"> <br> <br>
+    <button onclick="penjumlahan()">Penjumlahan</button> | 
+    <button onclick="pengurangan()">Pengurangan</button> | 
+    <button onclick="perkalian()">Perkalian</button> |
+    <button onclick="pembagian()">Pembagian</button>
+    <br> <br>
+    <p>Hasil: <input type="text" id="hasil" disabled></p>
+
+    <!-- javascript secara embeded -->
+    <script type="text/javascript">
+        console.log("Ini adalah sebuah pesan dari javascript embeded");
+        // deklarasi variabel: var, let 
+        let tglSekarang = new Date();
+        let formatTgl = tglSekarang.toDateString();
+        let elemen = document.getElementById("tanggal");
+        elemen.innerHTML = formatTgl;
+        console.log(formatTgl);
+
+        // membuat fungsi penjumlahan
+        function penjumlahan() {
+            let a, b, c;
+            a = Number(document.getElementById("angka1").value);
+            b = Number(document.getElementById("angka2").value);
+            c = a + b;
+            document.getElementById("hasil").value = c;
+            console.log("Hasil penjumlahan: " + c);
+        }
+
+        function pengurangan() {
+            let a, b, c;
+            a = Number(document.getElementById("angka1").value);
+            b = Number(document.getElementById("angka2").value);
+            c = a - b;
+            document.getElementById("hasil").value = c;
+            console.log("Hasil pengurangan: " + c);
+        }
+
+        function perkalian() {
+            let a, b, c;
+            a = Number(document.getElementById("angka1").value);
+            b = Number(document.getElementById("angka2").value);
+            c = a * b;
+            document.getElementById("hasil").value = c;
+            console.log("Hasil perkalian: " + c);
+        }
+
+        function pembagian() {
+            let a, b, c;
+            a = Number(document.getElementById("angka1").value);
+            b = Number(document.getElementById("angka2").value);
+            c = a / b;
+            document.getElementById("hasil").value = c;
+            console.log("Hasil pembagian: " + c);
+        }
+    </script>
+</body>
+</html>

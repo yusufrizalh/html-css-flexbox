@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Form Biodata</legend>
+            <label for="Nama Lengkap">Nama Lengkap:</label> <br>
+            <input type="text" name="nama_lengkap"> <br>
+            <label for="Email">Alamat Email:</label> <br>
+            <input type="email" name="alamat_email"> <br>
+            <label for="Alamat">Alamat:</label> <br>
+            <textarea name="alamat" cols="30" rows="2"></textarea> <br>
+            <label for="Jenis Kelamin">Jenis Kelamin</label> <br>
+            <input type="radio" name="jenis_kelamin" value="laki-laki" checked>
+                Laki - Laki <br>
+            <input type="radio" name="jenis_kelamin" value="perempuan">
+                Perempuan <br>
+            <label for="Hobi">Hobi:</label> <br>
+            <input type="checkbox" name="hobi" value="membaca"> Membaca <br>
+            <input type="checkbox" name="hobi" value="menulis"> Menulis <br>
+            <input type="checkbox" name="hobi" value="ngoding" checked> Ngoding <br>
+            <label for="Agama">Agama:</label> <br>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="katolik">Katolik</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select> <br> <br>
+            <input type="submit" value="Simpan"> | 
+            <input type="reset" value="Reset"> <br>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport
+        memiliki kemampuan responsive
+        reponsive: menyesuaikan ukuran layar monitor
+    -->
+    <title>CSS Layout</title>
+    <!-- CSS -->
+    <style>
+        .inlined {
+            display: inline;
+        }
+
+        #hidden {
+            display: none;
+        }
+
+        body {
+            background-color: cornsilk;
+        }
+
+        /* div {
+            /* 1 nilai untuk semua sisi 
+            padding: 16px;
+            border: 2px dashed black;
+            border-radius: 6px;
+            margin: 6px;
+        }  */
+
+        /* div {
+            /* didefinisikan satu per satu 
+            padding-left: 60px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+        } */
+
+        /* div {
+            /* berlaku untuk top/bottom (pertama)
+                left/right (kedua)
+            padding: 60px 10px;
+
+            padding: jarak dari konten ke border
+        } */
+
+        .flex-div {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(111, 111, 233);
+            flex-direction: row;
+            align-items: stretch;
+            height: 300px;
+        }
+
+        .flex-div > div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Disini berisi header 
+    </header>
+
+    <!-- <div>Block element no. 1</div>
+    <div>Block element no. 2</div>
+
+    <span>Block element inline 1</span>
+    <span>Block element inline 2</span> -->
+
+    <!-- CSS Flexbox -->
+    <div class="flex-div">
+        <div style="order: 3; flex-grow: 1;">1</div>
+        <div style="order: 4; flex-grow: 1; align-self: flex-end;">2</div>
+        <div style="order: 1; flex-grow: 1; align-self: flex-start;">3</div>
+        <div style="order: 2; flex-grow: 6; align-self: center;">4</div>
+    </div>
+
+    <footer>
+        Disini berisi footer 
+    </footer>
+</body>
+</html>

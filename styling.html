@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling HTML</title>
+    <!-- css embeded -->
+    <style>
+        body {
+            background: #e9e4ff;
+        }
+
+        table {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tr, td {
+            padding: 10px;
+        }
+
+        table tr:hover {
+            background-color: green;
+        }
+
+        th {
+            text-align: left;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* styling untuk form */
+        div {
+            background-color: #dddddd;
+            padding: 20px;
+            border-radius: 50px;
+        }
+
+        input[type=text], input[type=email], select {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit], input[type=reset] {
+            width: 100%;
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover, input[type=reset]:hover {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- <table>
+        <tr>
+            <th>Baris 1, Kolom 1</th>
+            <th>Baris 1, Kolom 1</th>
+            <th>Baris 1, Kolom 1</th>
+        </tr>
+        <tr>
+            <td>Baris 2 Kolom 1</td>
+            <td>Baris 2 Kolom 2</td>
+            <td>Baris 2 Kolom 3</td>
+        </tr>
+        <tr>
+            <td>Baris 3 Kolom 1</td>
+            <td>Baris 3 Kolom 2</td>
+            <td>Baris 3 Kolom 3</td>
+        </tr>
+        <tr>
+            <td>Baris 4 Kolom 1</td>
+            <td>Baris 4 Kolom 2</td>
+            <td>Baris 4 Kolom 3</td>
+        </tr>
+        <tr>
+            <td>Baris 5 Kolom 1</td>
+            <td>Baris 5 Kolom 2</td>
+            <td>Baris 5 Kolom 3</td>
+        </tr>
+    </table> -->
+
+    <!-- styling untuk form -->
+    <h3>CSS untuk styling Form</h3>
+    <div>
+        <form action="#" method="GET">
+            <label for="Nama Lengkap">Nama Lengkap</label>
+            <input type="text" name="nama_lengkap" placeholder="Tuliskan nama lengkap">
+
+            <label for="Alamat Email">Alamat Email</label>
+            <input type="email" name="alamat_email" placeholder="Tuliskan alamat email">
+
+            <label for="Agama">Agama:</label>
+            <select name="agama">
+                <option value="#">Pilih salah satu</option>
+                <option value="islam">Islam</option>
+                <option value="katolik">Katolik</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+
+            <input type="submit" value="Simpan">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
