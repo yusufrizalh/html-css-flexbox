@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #323d5f;
+            color: white;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #76b9d7;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* kontent: dibagi 2 kolom -> side, main */
+        .side {
+            flex: 30%;
+            background-color: #3c6ca8;
+            padding: 20px;
+        }
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* menu - menu pada navigation bar */
+        .navbar {
+            display: flex;
+            background-color: #76b9d7;
+        }
+        .navbar a {
+            color: white;
+            padding: 16px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #3c6ca8;
+            color: #76b9d7;
+        }
+
+        /* gambar */
+        .images {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* media query */
+        @media screen and (max-width: 600px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <h3>My Personal Web</h3>
+        <p>with <b><u> Flexible layout </u></b></p>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+
+    <!-- konten -->
+    <div class="row">
+        <div class="side">
+            <h3>Menu Samping</h3>
+            <p>Lorem ipsum</p>
+            <h5>Photo of me:</h5>
+            <div class="images" style="width: 200px;">Image 1</div>
+            <p>Lorem ipsum</p>
+            <h5>gambar lagi</h5>
+            <div class="images" style="width: 100px;">Image 2</div>
+            <br> <br>
+            <div class="images" style="width: 100px;">Image 3</div>
+        </div>
+        <div class="main">
+            <h3>Menu Utama</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Volutpat est velit egestas dui id ornare arcu odio. Mauris ultrices eros in cursus turpis massa tincidunt. Urna
+                porttitor rhoncus dolor purus non enim. Etiam erat velit scelerisque in dictum. Ridiculus mus mauris vitae ultricies
+                leo. Aenean pharetra magna ac placerat vestibulum lectus mauris. Adipiscing elit pellentesque habitant morbi tristique
+                senectus et netus et. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Porttitor rhoncus dolor
+                purus non enim praesent elementum. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Risus nec feugiat
+                in fermentum posuere urna nec tincidunt praesent. Orci eu lobortis elementum nibh tellus molestie nunc non blandit.
+            </p>
+            <p>   
+                Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. At erat pellentesque adipiscing commodo
+                elit at imperdiet dui. Non curabitur gravida arcu ac tortor dignissim convallis aenean et. Facilisi nullam vehicula
+                ipsum a arcu cursus vitae congue mauris. A pellentesque sit amet porttitor eget dolor morbi non. Viverra nibh cras
+                pulvinar mattis nunc sed blandit libero volutpat. Egestas maecenas pharetra convallis posuere morbi leo urna molestie
+                at. Sollicitudin nibh sit amet commodo nulla. Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Volutpat
+                lacus laoreet non curabitur gravida arcu ac tortor. Non arcu risus quis varius. Suscipit tellus mauris a diam maecenas
+                sed enim ut. Ut morbi tincidunt augue interdum velit euismod. Ut diam quam nulla porttitor massa id neque. Ultricies
+                lacus sed turpis tincidunt id aliquet risus. Duis at consectetur lorem donec massa sapien faucibus et molestie. Amet
+                mattis vulputate enim nulla aliquet porttitor lacus. Purus semper eget duis at tellus at urna.
+            </p>
+            <p>
+                Eget lorem dolor sed viverra ipsum nunc. Integer feugiat scelerisque varius morbi enim nunc. Amet consectetur adipiscing
+                elit ut aliquam. Neque gravida in fermentum et sollicitudin ac orci phasellus. Vestibulum morbi blandit cursus risus at
+                ultrices. Leo integer malesuada nunc vel risus. Enim praesent elementum facilisis leo vel fringilla est. Nascetur
+                ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Urna et pharetra pharetra massa massa ultricies mi quis
+                hendrerit. Nullam eget felis eget nunc. Faucibus in ornare quam viverra orci. Consequat id porta nibh venenatis cras
+                sed. Tellus mauris a diam maecenas. Feugiat in fermentum posuere urna nec tincidunt praesent.
+            </p>
+            <br> <br>
+            <div class="images" style="height: 200px;">
+                Image on Main Content 
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <h3>Copyright 2021 | Inixindo</h3>
+    </div>
+</body>
+</html>
